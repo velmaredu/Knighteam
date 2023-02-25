@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PantallaCreacionPartidaActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/fondoinicioapp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="223dp"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                android:id="@+id/nombreUsuarioEtiqueta"
+                android:layout_width="138dp"
+                android:layout_height="61dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/nombre_jugador"
+                android:textSize="18sp"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nombreJugador"
+                android:layout_width="138dp"
+                android:textColor="?android:textColorPrimary"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text"
+                android:layout_height="61dp" />
+
+            <TextView
+                android:id="@+id/edadEtiqueta"
+                android:layout_width="138dp"
+                android:layout_height="61dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/edad_jugador"
+                android:textSize="18sp"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edadJugador"
+                android:layout_width="138dp"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:layout_height="61dp" />
+
+            <TextView
+                android:id="@+id/generoEtiqueta"
+                android:layout_width="138dp"
+                android:layout_height="61dp"
+                android:text="@string/genero_jugador"
+                android:textSize="18sp"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/eleccionGenero"
+                android:layout_width="150dp"
+                android:popupBackground="@color/white"
+                android:layout_height="61dp" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonCrearJugador"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:background="@drawable/rock_button"
+        android:text="@string/botonCrearPartida"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+</FrameLayout>

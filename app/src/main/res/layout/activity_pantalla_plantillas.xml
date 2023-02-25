@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PantallaPlantillasActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/fondoinicioapp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPlantillas"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:id="@+id/plantillaSencilla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="?android:buttonTint"
+            android:checked="false"
+            android:textSize="16sp"
+            android:text="@string/plantillaSencilla"
+            android:textColor="?android:textColorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/plantillaDificil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="?android:buttonTint"
+            android:clickable="false"
+            android:textSize="16sp"
+            android:text="@string/plantillaDificil"
+            android:textColor="?android:textColorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/plantillaEmpatia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="?android:buttonTint"
+            android:clickable="false"
+            android:textSize="16sp"
+            android:text="@string/plantillaEmpatia"
+            android:textColor="?android:textColorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/plantillaComunicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="?android:buttonTint"
+            android:clickable="false"
+            android:textSize="16sp"
+            android:text="@string/plantillaComunicacion"
+            android:textColor="?android:textColorPrimary"/>
+
+    </RadioGroup>
+
+    <GridLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:columnCount="1"
+        android:rowCount="1">
+
+        <ImageButton
+            android:id="@+id/botonInfoSencilla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/botonInfoDificil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="15dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/botonInfoEmpatia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="15dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/botonInfoComunicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/info" />
+
+    </GridLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonSiguiente"
+        android:layout_width="149dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:background="@drawable/rock_button"
+        android:text="@string/boton_siguiente"
+        android:textSize="17sp"
+        android:textColor="?android:textColorPrimary" />
+
+</FrameLayout>
